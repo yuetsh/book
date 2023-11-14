@@ -13,14 +13,18 @@ export default defineConfig({
       detailsLabel: "详细信息",
     },
   },
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    externalLinkIcon: true,
     nav: [
       { text: "首页", link: "/" },
       {
         text: "Python",
         items: [
-          { text: "基础知识", link: "/python/index.md" },
+          { text: "基础知识", link: "/python/00/index.md" },
           { text: "办公自动化", link: "/oa/index.md" },
           { text: "网络爬虫", link: "/crawler/index.md" },
         ],
@@ -32,7 +36,7 @@ export default defineConfig({
         {
           text: "课程须知",
           items: [
-            { text: "本网站", link: "/python/00/book.md" },
+            { text: "本网站", link: "/python/00/index.md" },
             { text: "自测猫", link: "/python/00/cat.md" },
             { text: "练习册", link: "/python/00/playground.md" },
             { text: "判题狗", link: "/python/00/dog.md" },

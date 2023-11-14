@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Python 基础知识
-      link: /python/
+      link: /python/00/
     - theme: alt
       text: 计算机科学速成
       link: /cs/00/
