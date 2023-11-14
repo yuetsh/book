@@ -14,7 +14,7 @@ const asyncRun = (() => {
   return (python: string, input: string) => {
     // the id could be generated more carefully
     id = (id + 1) % Number.MAX_SAFE_INTEGER
-    return new Promise<{ result: string; error: string }>((onSuccess) => {
+    return new Promise<{ results: string[]; error: string }>((onSuccess) => {
       callbacks[id] = onSuccess
       worker.postMessage({ python, input, id })
     })

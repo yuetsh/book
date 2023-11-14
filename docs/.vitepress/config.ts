@@ -6,12 +6,12 @@ export default defineConfig({
   title: "徐越的编程书",
   markdown: {
     container: {
-      tipLabel: '提示',
-      warningLabel: '警告',
-      dangerLabel: '危险',
-      infoLabel: '信息',
-      detailsLabel: '详细信息'
-    }
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
+      infoLabel: "信息",
+      detailsLabel: "详细信息",
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -28,7 +28,45 @@ export default defineConfig({
       { text: "计算机科学", link: "/cs/00/index.md" },
     ],
     sidebar: {
-      "/python": [{}],
+      "/python": [
+        {
+          text: "课程须知",
+          items: [
+            { text: "本网站", link: "/python/00/book.md" },
+            { text: "自测猫", link: "/python/00/cat.md" },
+            { text: "练习册", link: "/python/00/playground.md" },
+            { text: "判题狗", link: "/python/00/dog.md" },
+          ],
+        },
+        {
+          text: "第一天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第二天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第三天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第四天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第五天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第六天",
+          items: [{ text: "", link: "" }],
+        },
+        {
+          text: "第七天",
+          items: [{ text: "", link: "" }],
+        },
+      ],
       "/oa": [{}],
       "/crawler": [{}],
       "/cs": [
@@ -49,7 +87,11 @@ export default defineConfig({
         { text: "......", link: "/cs/14/index.md" },
       ],
     },
-    outlineTitle: '目录',
-    docFooter: { prev: '上一篇', next: '下一篇' }
+    outlineTitle: "目录",
+    sidebarMenuLabel: "侧边栏",
+    returnToTopLabel: "返回顶部",
+    darkModeSwitchLabel: "浅色/暗色",
+
+    docFooter: { prev: "上一篇", next: "下一篇" },
   },
 })

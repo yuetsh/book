@@ -18,12 +18,12 @@ self.onmessage = async (event) => {
   const { id, python, input } = event.data
   // Now is the easy part, the one that is similar to working in the main thread:
   try {
-    let result = ""
+    let results = []
     self.pyodide.setStdin({ stdin: () => input })
-    self.pyodide.setStdout({ batched: (str) => (result = str) })
+    self.pyodide.setStdout({ batched: (str) => results.push(str) })
     await self.pyodide.runPythonAsync(python)
-    self.postMessage({ result, error: '', id })
+    self.postMessage({ results, error: "", id })
   } catch (error) {
-    self.postMessage({ result: '', error: error.message, id })
+    self.postMessage({ results: [], error: error.message, id })
   }
 }
