@@ -6,7 +6,7 @@ import CodeMirror from "vue-codemirror6"
 import { cpp } from "@codemirror/lang-cpp"
 import { python } from "@codemirror/lang-python"
 import { EditorView } from "@codemirror/view"
-import { createSubmission } from "../../api"
+import { createSubmission } from "../judge"
 import { smoothy } from "../cm-themes/smoothy"
 import { oneDark } from "../cm-themes/oneDark"
 
