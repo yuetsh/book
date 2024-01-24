@@ -14,7 +14,8 @@ export default defineConfig({
     },
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    ["link", { rel: "stylesheet", href: "/style.css" }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { computed, ref } from "vue"
+import { computed, ref} from "vue"
 import { useData } from "vitepress"
 import { VPButton } from "vitepress/theme"
-import CodeMirror from "vue-codemirror6"
+import Codemirror from "vue-codemirror6"
 import { cpp } from "@codemirror/lang-cpp"
 import { python } from "@codemirror/lang-python"
+import { indentUnit } from '@codemirror/language'
 import { EditorView } from "@codemirror/view"
 import { createSubmission } from "../judge"
 import { smoothy } from "../cm-themes/smoothy"
@@ -32,20 +33,23 @@ const lang = computed(() => {
 
 const styleTheme = EditorView.baseTheme({
   "& .cm-scroller": {
-    "font-family": "Consolas",
+    "font-family": "Monaco",
   },
   "&.cm-editor.cm-focused": {
     outline: "none",
   },
+  "&.cm-editor .cm-tooltip.cm-tooltip-autocomplete ul": {
+    "font-family": "Monaco",
+  },
 })
 
+const code = ref(props.code.trim())
 const input = ref("")
 const output = ref("")
-const code = ref(props.code.trim())
 
 async function run() {
   const result = await createSubmission(
-    { value: code.value, language: props.lang === "python" ? "Python3" : "C" },
+    { value: code.value, language: props.lang },
     input.value,
   )
   output.value = result.output
@@ -58,19 +62,22 @@ function reset() {
 </script>
 <template>
   <ClientOnly>
-    <p>代码编辑区</p>
-    <CodeMirror
+    <p>代码区</p>
+    <Codemirror
       v-model="code"
       :lang="lang"
-      :tab-size="4"
-      :readonly="props.readonly"
-      :extensions="[styleTheme, isDark ? oneDark : smoothy]"
-      wrap
       basic
       tab
+      :tab-size="4"
+      :readonly="props.readonly"
+      :extensions="[styleTheme, isDark ? oneDark : smoothy, indentUnit.of('    ')]"
     />
     <p>输入框</p>
-    <CodeMirror v-model="input" :extensions="[styleTheme]" />
+    <Codemirror
+      v-model="input"
+      basic
+      :extensions="[styleTheme, isDark ? oneDark : smoothy]"
+    />
     <div :class="$style.actions">
       <VPButton :class="$style.run" @click="run" text="运行"></VPButton>
       <VPButton @click="reset" theme="alt" text="重置"></VPButton>

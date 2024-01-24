@@ -3,13 +3,11 @@
 本站是用于
 
 <script lang="ts" setup>
-
 const code = `
-n = input()
-print(n*3)
-if n == "3":
-    print("哈哈哈")
-`
+print()
+x = 1
+if x == 1:
+    print("hahh")`
 </script>
 
-<code-editor :code="code"></code-editor>
+<editor :code="code" />

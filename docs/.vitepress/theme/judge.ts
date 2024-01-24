@@ -1,12 +1,12 @@
 import axios from "axios"
 
 interface Code {
-  language: "C" | "Python3"
+  language: "c" | "python"
   value: string
 }
 
 const DEAD_RESULTS = {
-  C: {
+  c: {
     encoded:
       "I2luY2x1ZGU8c3RkaW8uaD4NCg0KaW50IG1haW4oKQ0Kew0KICAgIHByaW50Zigi6buE5bKp5LiA6IGMIik7DQogICAgcmV0dXJuIDA7DQp9",
     result: {
@@ -14,45 +14,8 @@ const DEAD_RESULTS = {
       output: "黄岩一职",
     },
   },
-  "C++": {
-    encoded:
-      "I2luY2x1ZGU8aW9zdHJlYW0+DQoNCnVzaW5nIG5hbWVzcGFjZSBzdGQ7DQoNCmludCBtYWluKCkNCnsNCiAgICBjb3V0PDwi6buE5bKp5LiA6IGMIjw8ZW5kbDsNCiAgICByZXR1cm4gMDsNCn0=",
-    result: {
-      status: 3,
-      output: "黄岩一职",
-    },
-  },
-  Java: {
-    encoded:
-      "cHVibGljIGNsYXNzIE1haW4gew0KICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHsNCiAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCLpu4TlsqnkuIDogYwiKTsNCiAgICB9DQp9",
-    result: {
-      status: 3,
-      output: "黄岩一职",
-    },
-  },
-  Python3: {
+  python: {
     encoded: "cHJpbnQoIum7hOWyqeS4gOiBjCIp",
-    result: {
-      status: 3,
-      output: "黄岩一职",
-    },
-  },
-  Python2: {
-    encoded: "",
-    result: {
-      status: 3,
-      output: "黄岩一职",
-    },
-  },
-  Golang: {
-    encoded: "",
-    result: {
-      status: 3,
-      output: "黄岩一职",
-    },
-  },
-  JavaScript: {
-    encoded: "",
     result: {
       status: 3,
       output: "黄岩一职",
@@ -91,13 +54,8 @@ export async function createSubmission(code: Code, input: string) {
     return DEAD_RESULTS[code.language].result
   } else {
     const id = {
-      C: 50,
-      "C++": 54,
-      Java: 62,
-      Golang: 60,
-      JavaScript: 63,
-      Python2: 70,
-      Python3: 71,
+      c: 50,
+      python: 71,
     }[code.language]
     let compilerOptions = ""
     if (id === 50) compilerOptions = "-lm" // 解决 GCC 的链接问题

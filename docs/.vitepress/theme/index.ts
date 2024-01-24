@@ -9,6 +9,6 @@ export default {
   async enhanceApp({ app }) {
     app.component("bvideo", BVideo)
     app.component("author", Author)
-    app.component("code-editor", CodeEditor)
+    app.component("editor", CodeEditor)
   },
 } satisfies Theme
