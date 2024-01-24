@@ -1,4 +1,5 @@
 import axios from "axios"
+import { inBrowser } from 'vitepress'
 
 interface Code {
   language: "c" | "python"
@@ -24,6 +25,7 @@ const DEAD_RESULTS = {
 }
 
 function getChromeVersion() {
+  if (!inBrowser) return 0
   var raw = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)
   return raw ? parseInt(raw[2], 10) : 0
 }
