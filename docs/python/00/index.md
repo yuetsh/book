@@ -1,13 +1,19 @@
-# 如何使用本网站
+# 如何学习这个课程
 
-本站是用于
+::: tip
+下面的代码区域可以进行编辑并运行
+:::
 
 <script lang="ts" setup>
 const code = `
-print()
-x = 1
-if x == 1:
-    print("hahh")`
+n=input()
+if n == "黄岩一职":
+    print("欢迎光临")
+`
 </script>
 
 <editor :code="code" />
+
+```python
+print(123)
+```

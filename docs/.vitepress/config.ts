@@ -37,7 +37,7 @@ export default defineConfig({
         {
           text: "课程须知",
           items: [
-            { text: "本网站", link: "/python/00/index.md" },
+            { text: "代码区", link: "/python/00/index.md" },
             { text: "自测猫", link: "/python/00/cat.md" },
             { text: "练习册", link: "/python/00/playground.md" },
             { text: "判题狗", link: "/python/00/dog.md" },
@@ -95,7 +95,7 @@ export default defineConfig({
     outlineTitle: "目录",
     sidebarMenuLabel: "侧边栏",
     returnToTopLabel: "返回顶部",
-    darkModeSwitchLabel: "浅色/暗色",
+    darkModeSwitchLabel: "浅色/深色",
 
     docFooter: { prev: "上一篇", next: "下一篇" },
   },

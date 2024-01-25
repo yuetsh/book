@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "代码，启动"
-  tagline: "简单明了"
+  name: "徐越的编程书"
+  tagline: "用最简单的话讲清楚编程"
   actions:
     - theme: brand
       text: Python 基础知识
@@ -14,11 +14,10 @@ hero:
       link: /cs/00/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 派神启动
+    details: 运行代码、修改代码、输入交互
+  - title: 生动形象
+    details: 图文并茂、简单明了
+  - title: 随时随地
+    details: 手机可以看、电脑可以看、白天可以看、晚上可以看
 ---
-
