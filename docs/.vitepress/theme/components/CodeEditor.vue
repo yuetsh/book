@@ -89,7 +89,7 @@ function reset() {
         <VPButton :class="$style.run" @click="run" text="运行"></VPButton>
         <VPButton @click="reset" theme="alt" text="重置"></VPButton>
       </div>
-      <p v-if="output.length">运行结果</p>
+      <p :class="$style.title" v-if="output.length">运行结果</p>
       <pre :class="$style.output">{{ output }}</pre>
     </div>
   </ClientOnly>
