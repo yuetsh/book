@@ -22,14 +22,9 @@ export default defineConfig({
     externalLinkIcon: true,
     nav: [
       { text: "首页", link: "/" },
-      {
-        text: "Python",
-        items: [
-          { text: "基础知识", link: "/python/00/index.md" },
-          { text: "办公自动化", link: "/oa/index.md" },
-          { text: "网络爬虫", link: "/crawler/index.md" },
-        ],
-      },
+      { text: "基础知识", link: "/python/00/index.md" },
+      { text: "办公自动化", link: "/oa/index.md" },
+      { text: "网络爬虫", link: "/crawler/index.md" },
       { text: "计算机科学", link: "/cs/00/index.md" },
     ],
     sidebar: {
