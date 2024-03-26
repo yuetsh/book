@@ -5,21 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "start": "vitepress dev",
+    "build": "vitepress build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.2.5",
-    "vitepress": "1.0.0-rc.44"
+    "vitepress": "1.0.1"
   },
   "dependencies": {
     "@codemirror/lang-cpp": "^6.0.2",
     "@codemirror/lang-python": "^6.1.4",
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "codemirror": "^6.0.1",
     "vue-codemirror6": "~1.1.32"
   }

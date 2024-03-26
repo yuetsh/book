@@ -23,6 +23,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           REMOTE_HOST: ${{ secrets.HOST }}
           ARGS: "-avzr --delete"
-          SOURCE: docs/.vitepress/dist/
+          SOURCE: .vitepress/dist/
           REMOTE_USER: root
           TARGET: /root/NewBook/dist
