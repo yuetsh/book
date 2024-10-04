@@ -67,8 +67,8 @@ export default defineConfig({
         { text: "......", link: "/crash-course/14/index.md" },
       ],
     },
-    outlineTitle: "目录",
-    sidebarMenuLabel: "大纲",
+    outlineTitle: "大纲",
+    sidebarMenuLabel: "目录",
     returnToTopLabel: "返回顶部",
     darkModeSwitchLabel: "浅色/深色",
 
