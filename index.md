@@ -11,7 +11,7 @@ hero:
       link: /python/00/
     - theme: alt
       text: 计算机科学速成
-      link: /cs/00/
+      link: /crash-course/00/
 
 features:
   - title: 派神启动
