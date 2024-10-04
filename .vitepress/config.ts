@@ -30,12 +30,20 @@ export default defineConfig({
     sidebar: {
       "/python": [
         {
-          text: "课程须知",
+          text: "使用说明",
           items: [
-            { text: "代码区", link: "/python/00/index.md" },
-            { text: "自测猫", link: "/python/00/cat.md" },
-            { text: "练习册", link: "/python/00/playground.md" },
-            { text: "判题狗", link: "/python/00/dog.md" },
+            { text: "本网站", link: "/python/00/index.md" },
+            { text: "自测猫", link: "/python/00/code.md" },
+            { text: "判题狗", link: "/python/00/oj.md" },
+            { text: "练习册", link: "/python/00/play.md" },
+          ],
+        },
+        {
+          text: "编程技巧",
+          items: [
+            { text: "Python 小抄", link: "/python/01/cheatsheet.md" },
+            { text: "看懂报错信息", link: "/python/01/error-message.md" },
+            { text: "使用 AI", link: "/python/01/chatgpt.md" },
           ],
         },
       ],
@@ -60,7 +68,7 @@ export default defineConfig({
       ],
     },
     outlineTitle: "目录",
-    sidebarMenuLabel: "侧边栏",
+    sidebarMenuLabel: "大纲",
     returnToTopLabel: "返回顶部",
     darkModeSwitchLabel: "浅色/深色",
 

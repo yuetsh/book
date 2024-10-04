@@ -16,8 +16,10 @@ hero:
 features:
   - title: 派神启动
     details: 运行代码、修改代码、输入交互
-  - title: 生动形象
+  - title: 简单易懂
     details: 图文并茂、简单明了
-  - title: 随时随地
-    details: 手机可以看、电脑可以看、白天可以看、晚上可以看
+  - title: 横向扩展
+    details: 多了很多课上和书里没有的
+  - title: 轻轻松松
+    details: 按心情随时更新
 ---
