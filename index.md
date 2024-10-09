@@ -7,10 +7,10 @@ hero:
   tagline: "用最简单的话讲清楚编程"
   actions:
     - theme: brand
-      text: Python 基础知识
-      link: /python/00/
+      text: 编程基础
+      link: /basic/00/
     - theme: alt
-      text: 计算机科学速成
+      text: 计算机速成
       link: /crash-course/00/
 
 features:
@@ -19,7 +19,7 @@ features:
   - title: 简单易懂
     details: 图文并茂、简单明了
   - title: 横向扩展
-    details: 多了很多课上和书里没有的
+    details: 有很多课上和书里没有的
   - title: 轻轻松松
     details: 按心情随时更新
 ---
