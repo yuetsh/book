@@ -23,8 +23,6 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "基础知识", link: "/basic/manual/book/" },
-      { text: "数据分析", link: "/data-analysis/index.md" },
-      { text: "网络爬虫", link: "/crawler/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/" },
     ],
     sidebar: {
@@ -47,13 +45,13 @@ export default defineConfig({
           ],
         },
         {
-          text: "OJ",
+          text: "判题狗",
           items: [
-            { text: "推荐的做题顺序", link: "/basic/oj/oj-problems" },
+            { text: "推荐的做题顺序", link: "/basic/online-judge/ordering" },
           ],
         },
         {
-          text: "无用的冷知识",
+          text: "趣味杂谈",
           items: [
             { text: "中文编程语言介绍", link: "/basic/others/chinese-program-language" },
           ],
