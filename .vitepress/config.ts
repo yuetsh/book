@@ -22,7 +22,7 @@ export default defineConfig({
     externalLinkIcon: true,
     nav: [
       { text: "首页", link: "/" },
-      { text: "基础知识", link: "/basic/book/" },
+      { text: "基础知识", link: "/basic/manual/book/" },
       { text: "数据分析", link: "/data-analysis/index.md" },
       { text: "网络爬虫", link: "/crawler/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/" },
@@ -32,30 +32,30 @@ export default defineConfig({
         {
           text: "使用说明",
           items: [
-            { text: "本网站", link: "/basic/book" },
-            { text: "自测猫", link: "/basic/code" },
-            { text: "判题狗", link: "/basic/oj" },
-            { text: "练习册", link: "/basic/play" },
+            { text: "本网站", link: "/basic/manual/book" },
+            { text: "自测猫", link: "/basic/manual/code" },
+            { text: "判题狗", link: "/basic/manual/oj" },
+            { text: "练习册", link: "/basic/manual/play" },
           ],
         },
         {
           text: "编程技巧",
           items: [
-            { text: "Python 小抄", link: "/basic/cheatsheet" },
-            { text: "看懂报错信息", link: "/basic/error-message" },
-            { text: "使用 AI", link: "/basic/chatgpt" },
+            { text: "Python 小抄", link: "/basic/tips/cheatsheet" },
+            { text: "看懂报错信息", link: "/basic/tips/error-message" },
+            { text: "使用 AI", link: "/basic/tips/chatgpt" },
           ],
         },
         {
           text: "OJ",
           items: [
-            { text: "推荐的做题顺序", link: "/basic/oj-problems" },
+            { text: "推荐的做题顺序", link: "/basic/oj/oj-problems" },
           ],
         },
         {
           text: "无用的冷知识",
           items: [
-            { text: "中文编程语言介绍", link: "/basic/chinese-program-language" },
+            { text: "中文编程语言介绍", link: "/basic/others/chinese-program-language" },
           ],
         },
       ],
