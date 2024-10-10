@@ -32,24 +32,30 @@ export default defineConfig({
         {
           text: "使用说明",
           items: [
-            { text: "本网站", link: "/basic/00/index.md" },
-            { text: "自测猫", link: "/basic/00/code.md" },
-            { text: "判题狗", link: "/basic/00/oj.md" },
-            { text: "练习册", link: "/basic/00/play.md" },
+            { text: "本网站", link: "/basic/book" },
+            { text: "自测猫", link: "/basic/code" },
+            { text: "判题狗", link: "/basic/oj" },
+            { text: "练习册", link: "/basic/play" },
           ],
         },
         {
           text: "编程技巧",
           items: [
-            { text: "Python 小抄", link: "/basic/01/cheatsheet.md" },
-            { text: "看懂报错信息", link: "/basic/01/error-message.md" },
-            { text: "使用 AI", link: "/basic/01/chatgpt.md" },
+            { text: "Python 小抄", link: "/basic/cheatsheet" },
+            { text: "看懂报错信息", link: "/basic/error-message" },
+            { text: "使用 AI", link: "/basic/chatgpt" },
+          ],
+        },
+        {
+          text: "OJ",
+          items: [
+            { text: "推荐的做题顺序", link: "/basic/oj-sorting" },
           ],
         },
         {
           text: "无用的冷知识",
           items: [
-            { text: "中文编程语言介绍", link: "/basic/02/chinese-program-language.md" },
+            { text: "中文编程语言介绍", link: "/basic/chinese-program-language" },
           ],
         },
       ],

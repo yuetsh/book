@@ -1,6 +1,6 @@
 # 本网站的使用说明
 
-![](./assets/book.png)
+![](./book.png)
 
 本网站 [https://book.xuyue.cc](https://book.xuyue.cc) 是一本编程书，其中包含了编程语言、应用领域、计算机科学等相关内容。
 

@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 编程基础
-      link: /basic/00/
+      link: /basic/book/
     - theme: alt
       text: 计算机速成
       link: /crash-course/00/

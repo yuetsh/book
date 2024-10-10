@@ -1,6 +1,6 @@
 # 练习册的使用说明
 
-![](./assets/play.png)
+![](./play.png)
 
 练习册 [https://play.xuyue.cc](https://play.xuyue.cc) 单纯用于检测你是否掌握代码格式，本身这个网站也比较简单，半个小时就可以通关（关键是我比较懒，没有几道题
 
