@@ -49,7 +49,7 @@ export default defineConfig({
         {
           text: "OJ",
           items: [
-            { text: "推荐的做题顺序", link: "/basic/oj-sorting" },
+            { text: "推荐的做题顺序", link: "/basic/oj-problems" },
           ],
         },
         {
