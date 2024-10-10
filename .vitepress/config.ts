@@ -25,7 +25,7 @@ export default defineConfig({
       { text: "基础知识", link: "/basic/book/" },
       { text: "数据分析", link: "/data-analysis/index.md" },
       { text: "网络爬虫", link: "/crawler/index.md" },
-      { text: "计算机速成课", link: "/crash-course/00/index.md" },
+      { text: "计算机速成课", link: "/crash-course/00/" },
     ],
     sidebar: {
       "/basic": [
