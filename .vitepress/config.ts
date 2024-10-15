@@ -22,43 +22,50 @@ export default defineConfig({
     externalLinkIcon: true,
     nav: [
       { text: "首页", link: "/" },
-      { text: "基础知识", link: "/basic/manual/book/" },
-      { text: "计算机速成课", link: "/crash-course/00/" },
+      { text: "基础知识", link: "/basic/manual/book/index.md" },
+      { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
       "/basic": [
         {
           text: "使用说明",
           items: [
-            { text: "本网站", link: "/basic/manual/book" },
-            { text: "自测猫", link: "/basic/manual/code" },
-            { text: "判题狗", link: "/basic/manual/oj" },
-            { text: "练习册", link: "/basic/manual/play" },
+            { text: "本网站", link: "/basic/manual/book/index.md" },
+            { text: "自测猫", link: "/basic/manual/code/index.md" },
+            { text: "判题狗", link: "/basic/manual/oj/index.md" },
+            { text: "练习册", link: "/basic/manual/play/index.md" },
           ],
         },
         {
           text: "编程技巧",
           items: [
-            { text: "Python 小抄", link: "/basic/tips/cheatsheet" },
-            { text: "看懂报错信息", link: "/basic/tips/error-message" },
-            { text: "使用 AI", link: "/basic/tips/chatgpt" },
+            { text: "Python 小抄", link: "/basic/tips/cheatsheet/index.md" },
+            {
+              text: "看懂报错信息",
+              link: "/basic/tips/error-message/index.md",
+            },
+            { text: "使用 AI", link: "/basic/tips/chatgpt/index.md" },
           ],
         },
         {
           text: "判题狗",
           items: [
-            { text: "推荐的做题顺序", link: "/basic/online-judge/ordering" },
+            {
+              text: "推荐的做题顺序",
+              link: "/basic/online-judge/ordering/index.md",
+            },
           ],
         },
         {
           text: "趣味杂谈",
           items: [
-            { text: "中文编程语言介绍", link: "/basic/others/chinese-program-language" },
+            {
+              text: "中文编程语言介绍",
+              link: "/basic/others/chinese-program-language/index.md",
+            },
           ],
         },
       ],
-      "/data-analysis": [{}],
-      "/crawler": [{}],
       "/crash-course": [
         { text: "简介", link: "/crash-course/00/index.md" },
         { text: "计算机早期历史", link: "/crash-course/01/index.md" },

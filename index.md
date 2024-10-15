@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 编程基础
-      link: /basic/manual/book/
+      link: /basic/manual/book/index.md
     - theme: alt
       text: 计算机速成
-      link: /crash-course/00/
+      link: /crash-course/00/index.md
 
 features:
   - title: 派神启动
