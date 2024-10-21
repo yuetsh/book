@@ -12,6 +12,14 @@
 
 [1087 震！惊！发！现！](https://oj.xuyue.cc/problem/1087)
 
+### 课后作业（涉及到 if 语句）
+
+[1047 阿福讲白搭](https://oj.xuyue.cc/problem/1047)
+
+[1054 啊对对对](https://oj.xuyue.cc/problem/1054)
+
+[1022 叫你一声，你敢答应吗？](https://oj.xuyue.cc/problem/1022)
+
 ## 输入（只有空格）
 
 [2020 学习鸣式](https://oj.xuyue.cc/problem/2020)
@@ -20,7 +28,15 @@
 
 ## 输入（类型转换）
 
+[4005《蓝色妖姬之切尔西传奇1.0》](https://oj.xuyue.cc/problem/4005)
+
+[1044 加法计算器](https://oj.xuyue.cc/problem/1044)
+
+[1049 Switch！](https://oj.xuyue.cc/problem/1049)
+
 ## 输出（保留小数位）
+
+[4007《 闪 电 五 连 鞭 》](https://oj.xuyue.cc/problem/4007)
 
 ## if...else...
 
