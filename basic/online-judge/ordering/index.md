@@ -34,9 +34,19 @@
 
 [1049 Switch！](https://oj.xuyue.cc/problem/1049)
 
+[4010 先写一个解](https://oj.xuyue.cc/problem/4010)
+
 ## 输出（保留小数位）
 
 [4007《 闪 电 五 连 鞭 》](https://oj.xuyue.cc/problem/4007)
+
+[5028 三级跳的魅力](https://oj.xuyue.cc/problem/5028)
+
+[1046 圆的面积](https://oj.xuyue.cc/problem/1046)
+
+## if...
+
+[1086【农】韩信十三枪](https://oj.xuyue.cc/problem/1086)
 
 ## if...else...
 
@@ -46,6 +56,32 @@
 
 [4013 拯救世界的勇士](https://oj.xuyue.cc/problem/4013)
 
+## if...elif...else...
+
+[3016 你行不行啊，细狗](https://oj.xuyue.cc/problem/3016)
+
+[5015 新生代歌曲](https://oj.xuyue.cc/problem/5015)
+
+[1035 成绩评定](https://oj.xuyue.cc/problem/1035)
+
+[1058 顶 级 厨 师，九 转 大 肠](https://oj.xuyue.cc/problem/1058)
+
+[9030【奥】《请喊出我的名字吧！泽塔奥特曼》](https://oj.xuyue.cc/problem/9030)
+
 ## 循环（简单）
 
 [1084 【原】万猿升万德](https://oj.xuyue.cc/problem/1084)
+
+[1016 康康的夸夸群](https://oj.xuyue.cc/problem/1016)
+
+[1085 乌！蒙！山！连！着！山！外！山！](https://oj.xuyue.cc/problem/1085)
+
+[1013 爱的魔力转圈圈](https://oj.xuyue.cc/problem/1013)
+
+## 循环（有点难度，但不多）
+
+[3009 闻神的路虎](https://oj.xuyue.cc/problem/3009)
+
+[1090 教你存钱V1](https://oj.xuyue.cc/problem/1090)
+
+[1017 勇敢勇敢我的朋友](https://oj.xuyue.cc/problem/1017)
