@@ -44,6 +44,8 @@
 
 [1046 圆的面积](https://oj.xuyue.cc/problem/1046)
 
+[9021 第一个目的地](https://oj.xuyue.cc/problem/9021)
+
 ## if...
 
 [1086【农】韩信十三枪](https://oj.xuyue.cc/problem/1086)
