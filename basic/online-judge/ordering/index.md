@@ -34,8 +34,6 @@
 
 [1049 Switch！](https://oj.xuyue.cc/problem/1049)
 
-[4010 先写一个解](https://oj.xuyue.cc/problem/4010)
-
 ## 输出（保留小数位）
 
 [4007《 闪 电 五 连 鞭 》](https://oj.xuyue.cc/problem/4007)
