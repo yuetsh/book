@@ -44,6 +44,10 @@
 
 [9021 第一个目的地](https://oj.xuyue.cc/problem/9021)
 
+## f-string 格式化字符串
+
+[1007 整数四则运算](https://oj.xuyue.cc/problem/1007)
+
 ## if...
 
 [1086【农】韩信十三枪](https://oj.xuyue.cc/problem/1086)
@@ -85,3 +89,13 @@
 [1090 教你存钱V1](https://oj.xuyue.cc/problem/1090)
 
 [1017 勇敢勇敢我的朋友](https://oj.xuyue.cc/problem/1017)
+
+## 综合性的题目（稍微要动动脑子）
+
+[1001 三天打鱼两天晒网](https://oj.xuyue.cc/problem/1001)
+
+[1003 计算时间差](https://oj.xuyue.cc/problem/1003)
+
+[1023 康康买西瓜](https://oj.xuyue.cc/problem/1023)
+
+[1032 前前前世](https://oj.xuyue.cc/problem/1032)
