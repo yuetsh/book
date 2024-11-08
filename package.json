@@ -13,7 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.3.3",
-    "vitepress": "1.4.1"
+    "vitepress": "1.5.0"
   },
   "dependencies": {
     "@codemirror/lang-cpp": "^6.0.2",
