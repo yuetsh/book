@@ -12,13 +12,7 @@
 
 [1087 震！惊！发！现！](https://oj.xuyue.cc/problem/1087)
 
-### 课后作业（涉及到 if 语句）
-
 [1047 阿福讲白搭](https://oj.xuyue.cc/problem/1047)
-
-[1054 啊对对对](https://oj.xuyue.cc/problem/1054)
-
-[1022 叫你一声，你敢答应吗？](https://oj.xuyue.cc/problem/1022)
 
 ## 输入（只有空格）
 
@@ -48,11 +42,15 @@
 
 [1007 整数四则运算](https://oj.xuyue.cc/problem/1007)
 
-## if...
+## 条件（if...）
 
 [1086【农】韩信十三枪](https://oj.xuyue.cc/problem/1086)
 
-## if...else...
+[1054 啊对对对](https://oj.xuyue.cc/problem/1054)
+
+[1022 叫你一声，你敢答应吗？](https://oj.xuyue.cc/problem/1022)
+
+## 条件（if...else...）
 
 [1089 海公牛](https://oj.xuyue.cc/problem/1089)
 
@@ -60,7 +58,7 @@
 
 [4013 拯救世界的勇士](https://oj.xuyue.cc/problem/4013)
 
-## if...elif...else...
+## 条件（if...elif...else...）
 
 [3016 你行不行啊，细狗](https://oj.xuyue.cc/problem/3016)
 
@@ -82,6 +80,8 @@
 
 [1013 爱的魔力转圈圈](https://oj.xuyue.cc/problem/1013)
 
+[1045 \*\*\*\*\*\*\*\*](https://oj.xuyue.cc/problem/1045)
+
 ## 循环（有点难度，但不多）
 
 [3009 闻神的路虎](https://oj.xuyue.cc/problem/3009)
@@ -89,6 +89,8 @@
 [1090 教你存钱V1](https://oj.xuyue.cc/problem/1090)
 
 [1017 勇敢勇敢我的朋友](https://oj.xuyue.cc/problem/1017)
+
+[1048 奇怪的数字格式](https://oj.xuyue.cc/problem/1048)
 
 ## 综合性的题目（稍微要动动脑子）
 
@@ -99,3 +101,5 @@
 [1023 康康买西瓜](https://oj.xuyue.cc/problem/1023)
 
 [1032 前前前世](https://oj.xuyue.cc/problem/1032)
+
+[1075 开水是钝角](https://oj.xuyue.cc/problem/1075)
