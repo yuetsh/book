@@ -1,6 +1,6 @@
 # 调试并记录
 
-## [前提自学](/basic/tips/pythontutor/)
+## [完成自学](/basic/tips/pythontutor/)
 
 现在需要记录每次的调试过程，分别需要记录：
 
