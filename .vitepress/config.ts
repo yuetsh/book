@@ -45,6 +45,10 @@ export default defineConfig({
               link: "/basic/tips/error-message/index.md",
             },
             { text: "使用 AI", link: "/basic/tips/chatgpt/index.md" },
+            {
+              text: "可视化执行流程",
+              link: "/basic/tips/pythontutor/index.md",
+            },
           ],
         },
         {
