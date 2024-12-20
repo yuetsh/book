@@ -52,6 +52,19 @@ export default defineConfig({
           ],
         },
         {
+          text: "任务",
+          items: [
+            {
+              text: "调试并记录",
+              link: "/basic/tasks/pythontutor/index.md",
+            },
+            {
+              text: "筛选并找到规律",
+              link: "/basic/tasks/pythontutor-statistics/index.md",
+            },
+          ],
+        },
+        {
           text: "判题狗",
           items: [
             {
