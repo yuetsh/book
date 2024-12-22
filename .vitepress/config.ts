@@ -45,23 +45,6 @@ export default defineConfig({
               link: "/basic/tips/error-message/index.md",
             },
             { text: "使用 AI", link: "/basic/tips/chatgpt/index.md" },
-            {
-              text: "可视化执行流程",
-              link: "/basic/tips/pythontutor/index.md",
-            },
-          ],
-        },
-        {
-          text: "任务",
-          items: [
-            {
-              text: "调试并记录",
-              link: "/basic/tasks/pythontutor/index.md",
-            },
-            {
-              text: "筛选并找到规律",
-              link: "/basic/tasks/pythontutor-statistics/index.md",
-            },
           ],
         },
         {
