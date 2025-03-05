@@ -22,7 +22,8 @@ export default defineConfig({
     externalLinkIcon: true,
     nav: [
       { text: "首页", link: "/" },
-      { text: "基础知识", link: "/basic/manual/book/index.md" },
+      { text: "编程基础", link: "/basic/manual/book/index.md" },
+      { text: "Web前端", link: "/web/2-div/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
@@ -40,11 +41,11 @@ export default defineConfig({
           text: "编程技巧",
           items: [
             { text: "Python 小抄", link: "/basic/tips/cheatsheet/index.md" },
-            {
-              text: "看懂报错信息",
-              link: "/basic/tips/error-message/index.md",
-            },
-            { text: "使用 AI", link: "/basic/tips/chatgpt/index.md" },
+            // {
+            //   text: "看懂报错信息",
+            //   link: "/basic/tips/error-message/index.md",
+            // },
+            // { text: "使用 AI", link: "/basic/tips/chatgpt/index.md" },
           ],
         },
         {
@@ -83,6 +84,7 @@ export default defineConfig({
         { text: "算法入门", link: "/crash-course/13/index.md" },
         { text: "......", link: "/crash-course/14/index.md" },
       ],
+      "/web": [{ text: "盒模型(1)", link: "/web/2-div/index.md" }],
     },
     outlineTitle: "大纲",
     sidebarMenuLabel: "目录",
