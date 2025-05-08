@@ -1,5 +1,5 @@
 import axios from "axios"
-import { inBrowser } from 'vitepress'
+import { inBrowser } from "vitepress"
 
 interface Code {
   language: "c" | "python"
@@ -24,17 +24,8 @@ const DEAD_RESULTS = {
   },
 }
 
-function getChromeVersion() {
-  if (!inBrowser) return 0
-  var raw = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)
-  return raw ? parseInt(raw[2], 10) : 0
-}
-
-const isLowVersion = getChromeVersion() < 80
-
-const protocol = isLowVersion ? "http" : "https"
-
-const http = axios.create({ baseURL: `${protocol}://judge0api.xuyue.cc` })
+//@ts-ignore
+const http = axios.create({ baseURL: import.meta.env.VITE_JUDGE0_URL })
 
 function encode(string?: string) {
   return btoa(String.fromCharCode(...new TextEncoder().encode(string ?? "")))
