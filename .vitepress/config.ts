@@ -23,7 +23,6 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "编程基础", link: "/basic/manual/book/index.md" },
-      { text: "Web前端", link: "/web/2-div/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
@@ -84,7 +83,6 @@ export default defineConfig({
         { text: "算法入门", link: "/crash-course/13/index.md" },
         { text: "......", link: "/crash-course/14/index.md" },
       ],
-      "/web": [{ text: "盒模型(1)", link: "/web/2-div/index.md" }],
     },
     outlineTitle: "大纲",
     sidebarMenuLabel: "目录",
