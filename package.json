@@ -7,7 +7,7 @@
   "scripts": {
     "start": "vitepress dev",
     "build": "vitepress build",
-    "build:staging": "vitepress build --mode=staging"
+    "build:staging": "vitepress build --env-mode=staging"
   },
   "keywords": [],
   "author": "",
