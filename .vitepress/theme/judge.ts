@@ -24,8 +24,12 @@ const DEAD_RESULTS = {
   },
 }
 
+let url = "http://10.13.114.214:8082"
 //@ts-ignore
-const http = axios.create({ baseURL: import.meta.env.VITE_JUDGE0_URL })
+if (import.meta.env.MODE === "production") {
+  url = "https://judge0.xuyue.cc"
+}
+const http = axios.create({ baseURL: url })
 
 function encode(string?: string) {
   return btoa(String.fromCharCode(...new TextEncoder().encode(string ?? "")))
