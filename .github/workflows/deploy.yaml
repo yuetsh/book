@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: "npm"
       - run: npm install
       - run: npm run build
@@ -25,4 +25,4 @@ jobs:
           ARGS: "-avzr --delete"
           SOURCE: .vitepress/dist/
           REMOTE_USER: root
-          TARGET: /root/NewBook/dist
+          TARGET: /root/Book/dist

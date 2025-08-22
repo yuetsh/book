@@ -24,10 +24,10 @@ const DEAD_RESULTS = {
   },
 }
 
-let url = "http://10.13.114.214:8082"
+let url = "http://10.13.114.114:8082"
 //@ts-ignore
 if (import.meta.env.MODE === "production") {
-  url = "https://judge0.xuyue.cc"
+  url = "https://judge0api.xuyue.cc"
 }
 const http = axios.create({ baseURL: url })
 
