@@ -5,6 +5,8 @@ export default defineConfig({
   lang: "zh-Hans-CN",
   title: "徐越的编程书",
   markdown: {
+    lineNumbers: true,
+    math: true,
     container: {
       tipLabel: "提示",
       warningLabel: "警告",
