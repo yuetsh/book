@@ -23,6 +23,8 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "编程基础", link: "/basic/manual/book/index.md" },
+      { text: "网页理论", link: "/web/00/index.md" },
+      { text: "数媒理论", link: "/digital-media/00/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
