@@ -15,7 +15,7 @@ export default defineConfig({
   },
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    ["link", { rel: "stylesheet", href: "。/style.css" }],
+    ["link", { rel: "stylesheet", href: "/style.css" }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -23,8 +23,9 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "编程基础", link: "/basic/manual/book/index.md" },
-      { text: "网页理论", link: "/web/00/index.md" },
-      { text: "数媒理论", link: "/digital-media/00/index.md" },
+      { text: "网页理论", link: "/web/index.md" },
+      { text: "数媒理论", link: "/digital-media/index.md" },
+      { text: "Python 编程理论", link: "/python/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
