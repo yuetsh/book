@@ -3,7 +3,6 @@ import DefaultTheme from "vitepress/theme"
 import BVideo from "./components/BVideo.vue"
 import Author from "./components/Author.vue"
 import CodeEditor from "./components/CodeEditor.vue"
-import './custom.css'
 
 export default {
   extends: DefaultTheme,
