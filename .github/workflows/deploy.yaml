@@ -5,24 +5,39 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: debian
+            build_command: build
+            remote_port: 22
+          - name: school
+            build_command: build:staging
+            remote_port: 8822
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: "npm"
-      - run: npm install
-      - run: npm run build
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run ${{ matrix.build_command }}
+        env:
+          CI: false
 
       - uses: easingthemes/ssh-deploy@main
-        with:
+        env:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_PORT: ${{ matrix.remote_port }}
           ARGS: "-avzr --delete"
-          SOURCE: .vitepress/dist/
+          SOURCE: dist/
           REMOTE_USER: root
-          TARGET: /root/Book/dist
+          TARGET: /root/Book/build
