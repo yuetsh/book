@@ -38,6 +38,6 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_PORT: ${{ matrix.remote_port }}
           ARGS: "-avzr --delete"
-          SOURCE: dist/
+          SOURCE: .vitepress/dist/
           REMOTE_USER: root
           TARGET: /root/Book/build
