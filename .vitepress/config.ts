@@ -47,7 +47,6 @@ export default defineConfig({
       { text: "编程基础", link: "/basic/manual/book/index.md" },
       { text: "网页理论", link: "/web/index.md" },
       { text: "数媒理论", link: "/digital-media/index.md" },
-      { text: "Python 编程理论", link: "/python/index.md" },
       { text: "计算机速成课", link: "/crash-course/00/index.md" },
     ],
     sidebar: {
@@ -64,6 +63,10 @@ export default defineConfig({
         {
           text: "编程技巧",
           items: [
+            {
+              text: "Python 程序设计基础",
+              link: "/basic/python/index.md",
+            },
             { text: "Python 小抄", link: "/basic/tips/cheatsheet/index.md" },
             // {
             //   text: "看懂报错信息",
@@ -90,6 +93,10 @@ export default defineConfig({
             },
           ],
         },
+      ],
+      web: [
+        { text: "理论基础", link: "/web/index.md" },
+        { text: "Web 前端微项目", link: "/web/micro-projects.md" },
       ],
       "/crash-course": [
         { text: "简介", link: "/crash-course/00/index.md" },
