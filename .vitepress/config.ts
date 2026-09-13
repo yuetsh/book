@@ -80,7 +80,7 @@ export default defineConfig({
           items: [
             {
               text: "推荐的做题顺序",
-              link: "/basic/online-judge/ordering/index.md",
+              link: "/basic/online-judge/ordering-26-09/index.md",
             },
           ],
         },
