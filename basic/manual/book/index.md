@@ -4,19 +4,7 @@
 
 本网站 [https://book.xuyue.cc](https://book.xuyue.cc) 是一本编程书，其中包含了编程语言、应用领域、计算机科学等相关内容。
 
-本网站支持代码互动，比如下面的代码区，在输入框输入**黄岩一职**，点击运行，会显示欢迎光临：
-
-<script lang="ts" setup>
-const code = `
-a=input()
-if a == "黄岩一职":
-    print("欢迎光临")
-`
-</script>
-
-<editor :code="code" />
-
-当然普通的、不互动的代码块也有，一般用于演示：
+文中的代码块一般用于演示，可以复制到[自测猫](../code/index.md)中运行：
 
 ```python
 print("欢迎光临")
