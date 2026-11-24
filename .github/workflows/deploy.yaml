@@ -17,10 +17,8 @@ jobs:
         include:
           - name: debian
             build_command: build
-            remote_port: 22
           - name: school
             build_command: build:staging
-            remote_port: 8822
     steps:
       - uses: actions/checkout@v7
 
@@ -33,12 +31,27 @@ jobs:
         env:
           CI: false
 
-      - uses: easingthemes/ssh-deploy@main
+      # 机房的公网 8822 已关：school 经服务器跳板（ProxyJump）连服务器本机的 8822
+      - name: 部署
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_PORT: ${{ matrix.remote_port }}
-          ARGS: "-avzr --delete"
-          SOURCE: .vitepress/dist/
-          REMOTE_USER: root
-          TARGET: /root/Book/build
+          KEY: ${{ secrets.KEY }}
+          HOST: ${{ secrets.HOST }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          cat > ~/.ssh/config <<EOF
+          Host debian
+            HostName $HOST
+          Host school
+            HostName 127.0.0.1
+            Port 8822
+            HostKeyAlias school
+            ProxyJump debian
+          Host *
+            User root
+            IdentityFile ~/.ssh/id_deploy
+            IdentitiesOnly yes
+            StrictHostKeyChecking accept-new
+            ServerAliveInterval 15
+          EOF
+          rsync -az --delete --no-owner --no-group .vitepress/dist/ ${{ matrix.name }}:/root/Book/build/
