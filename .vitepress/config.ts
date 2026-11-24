@@ -1,10 +1,34 @@
 import { defineConfig } from "vitepress"
 
+// 机房版（npm run build:staging）：学生机只在学校内网、出不了外网，
+// 正文里指向线上站点的链接换成机房那台（10.13.114.114）上对应的端口。
+// play.xuyue.cc 机房没有部署，保持原样。
+const SCHOOL = process.env.BOOK_SCHOOL === "1"
+const SCHOOL_HOSTS: [RegExp, string][] = [
+  [/https?:\/\/oj\.xuyue\.cc/g, "http://10.13.114.114:81"],
+  [/https?:\/\/code\.xuyue\.cc/g, "http://10.13.114.114:82"],
+  [/https?:\/\/book\.xuyue\.cc/g, "http://10.13.114.114:84"],
+]
+const toSchool = (s: string) => SCHOOL_HOSTS.reduce((acc, [re, to]) => acc.replace(re, to), s)
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-Hans-CN",
   title: "徐越的编程书",
   markdown: {
+    config: (md) => {
+      if (!SCHOOL) return
+      // 改 token 而不是渲染结果：页面 HTML、客户端路由用的 JS 和本地搜索索引都从这里出来
+      const rewrite = (tokens: any[]) => {
+        for (const t of tokens) {
+          // 数学公式等插件的 token 里有不是字符串的值，只动字符串
+          if (t.attrs) for (const a of t.attrs) if (typeof a[1] === "string") a[1] = toSchool(a[1])
+          if (typeof t.content === "string") t.content = toSchool(t.content)
+          if (t.children) rewrite(t.children)
+        }
+      }
+      md.core.ruler.push("school-links", (state) => rewrite(state.tokens))
+    },
     lineNumbers: true,
     math: true,
     container: {
